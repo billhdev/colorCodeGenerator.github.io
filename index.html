@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=960, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Color Picker Clipboard</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <div id="output-color">
+      <h1 class="title">Your Color Choice</h1>
+    </div>
+
+    <div class="color-choice">
+      <div class="color-row">
+        <label for="color1">Color 1:</label>
+        <input class="color-column" type="color" id="color1" name="color1" value="#3B97A3">
+      </div>
+
+      <div class="color-row">
+        <label for="color2">Color 2:</label>
+        <input class="color-column" type="color" id="color2" name="color2" value="#B7375D">
+      </div>
+    </div>
+
+
+    <label for="gradient">Gradient</label>
+    <input type="range" id="gradient" name="gradient" min="0" max="100" value="50">
+
+
+    <div class="color-row">
+      <label for="output-code">Your Background Code is</label>
+      <input type="text" id="output-code" readonly>
+
+    </div>
+
+    <div class="btn-container">
+      <button id="copy-btn">Copy to Clipboard</button>
+      <button id="randomGenerated-btn" class="randomGenerated">Random Generated</button>
+    </div>
+  </div>
+  <script src="index.js"></script>
+</body>
+
+</html>
