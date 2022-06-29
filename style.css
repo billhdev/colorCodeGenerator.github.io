@@ -81,3 +81,11 @@ button:hover,
 button:focus {
 	background: rgba(144, 238, 144, 0.486);
 }
+
+@media (min-width: 440px) and (max-width: 768px) {
+	.color-row {
+		display: block;
+		text-align: center;
+		margin-top: 2em;
+	}
+}
